@@ -1,5 +1,9 @@
 import os
 from instaloader import Instaloader
+from dotenv import load_dotenv
+
+load_dotenv()
+
 class Config:
     API_ID = int(os.environ.get("API_ID", "10658300"))
     API_HASH = os.environ.get("API_HASH", "728e3bfb3598067c562f86451ef811f2")
